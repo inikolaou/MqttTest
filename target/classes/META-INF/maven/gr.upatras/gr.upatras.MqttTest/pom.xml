@@ -7,7 +7,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>gr.upatras</groupId>
-	<artifactId>MqttTest</artifactId>
+	<artifactId>gr.upatras.MqttTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MqttTest</name>
 	<description>A small program in Java that sends an ΗΤΤP POST request with a small-sized text that is published through MQTT</description>
