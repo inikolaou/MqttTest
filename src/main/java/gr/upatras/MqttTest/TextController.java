@@ -33,6 +33,8 @@ public class TextController {
 			@ApiParam(value = "The Text to be created", required = true) @RequestBody Text t) {
 		log.info("Will add a new text");
 		Text text = textService.addText(t);
+		SimpleMqttClient smc = new SimpleMqttClient();
+		smc.runClient(text.getText(), true, false);
 		return new ResponseEntity<Text>(text, HttpStatus.OK);
 	}
 }
